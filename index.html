@@ -4,9 +4,10 @@
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
 <meta name="theme-color" content="#0d1b2a" />
-<title>Greg Digital — Meta Ads That Scale</title>
-<meta name="description" content="Greg Digital is a performance-led Meta Ads agency. We build creative, funnels, and tracking that turn ad spend into predictable revenue." />
-<link rel="icon" type="image/png" href="icon.png" />
+<title>Greg Digital — Meta Ads, Built Around Your Brand</title>
+<meta name="description" content="Greg Digital is a founder-led Meta Ads studio. Honest work, transparent pricing, and direct access — no agency layers, no fluff." />
+<link rel="icon" type="image/png" sizes="512x512" href="icon.png" />
+<link rel="apple-touch-icon" href="icon.png" />
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -222,6 +223,12 @@ p{line-height:1.6;color:var(--gray-700);font-size:17px;margin:0}
 @keyframes draw{to{stroke-dashoffset:0}}
 @keyframes fadeArea{to{opacity:1}}
 
+.audit-list{list-style:none;padding:0;margin:0 0 14px;display:flex;flex-direction:column;gap:10px}
+.audit-list li{display:flex;gap:12px;padding:12px 14px;background:#fff;border:1px solid var(--gray-100);border-radius:12px;align-items:flex-start}
+.audit-list .tick{flex:0 0 22px;width:22px;height:22px;border-radius:50%;background:var(--grad-brand);color:#fff;display:flex;align-items:center;justify-content:center;margin-top:2px}
+.audit-list .tick svg{width:13px;height:13px}
+.audit-list .t{font-weight:700;color:var(--navy);font-size:14px;line-height:1.2}
+.audit-list .s{color:var(--gray-500);font-size:12.5px;margin-top:2px;line-height:1.35}
 .dash-foot{display:flex;align-items:center;justify-content:space-between;margin-top:14px;font-size:12px;color:var(--gray-500)}
 .dash-foot .live{display:flex;align-items:center;gap:6px;color:#0a8f3c;font-weight:600}
 .dash-foot .live .dot{width:6px;height:6px;border-radius:50%;background:#22c55e;box-shadow:0 0 0 4px rgba(34,197,94,.18);animation:pulse 1.6s infinite}
@@ -470,6 +477,25 @@ p{line-height:1.6;color:var(--gray-700);font-size:17px;margin:0}
 .stat .suffix{font-weight:800;color:#cdbcff;font-size:.55em;margin-left:4px;vertical-align:top}
 .stat .lab{margin-top:10px;color:rgba(255,255,255,.72);font-size:14.5px;font-weight:500}
 
+.why-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
+@media (max-width:980px){.why-grid{grid-template-columns:repeat(2,1fr)}}
+@media (max-width:560px){.why-grid{grid-template-columns:1fr}}
+.why{
+  padding:30px 28px;border-radius:22px;
+  background:rgba(255,255,255,.04);
+  border:1px solid rgba(255,255,255,.08);
+  backdrop-filter:blur(8px);
+  transition:transform .35s var(--ease), background .35s var(--ease), border-color .35s var(--ease);
+}
+.why:hover{transform:translateY(-4px); background:rgba(255,255,255,.07); border-color:rgba(124,77,255,.35)}
+.why-ic{
+  width:44px;height:44px;border-radius:12px;display:flex;align-items:center;justify-content:center;
+  background:linear-gradient(135deg,rgba(41,98,255,.25),rgba(124,77,255,.25));
+  color:#cdbcff;margin-bottom:18px;
+}
+.why h3{color:#fff;font-size:18px;margin-bottom:8px}
+.why p{color:rgba(255,255,255,.72);font-size:14.5px;line-height:1.55}
+
 /* ==========================================================
    PROCESS
    ========================================================== */
@@ -517,6 +543,8 @@ p{line-height:1.6;color:var(--gray-700);font-size:17px;margin:0}
 .metric .label{font-size:12px;color:rgba(255,255,255,.6);text-transform:uppercase;letter-spacing:.08em;font-weight:600}
 .metric .value{font-size:36px;font-weight:900;letter-spacing:-.02em;margin-top:8px;background:linear-gradient(180deg,#fff,#a8c4ff);-webkit-background-clip:text;background-clip:text;color:transparent}
 .metric .arrow{display:inline-block;margin-left:6px;color:#22c55e;font-size:14px;vertical-align:middle}
+.metric .sub{margin-top:6px;color:rgba(255,255,255,.55);font-size:12px;font-weight:500;letter-spacing:.01em}
+.founding-cta{grid-column:1 / -1;justify-content:center;margin-top:6px}
 
 /* ==========================================================
    TESTIMONIALS
@@ -531,6 +559,11 @@ p{line-height:1.6;color:var(--gray-700);font-size:17px;margin:0}
 }
 .t-card:hover{transform:translateY(-4px);box-shadow:var(--shadow-2)}
 .stars{display:flex;gap:2px;color:#ffb547;margin-bottom:14px}
+.badge-row{display:inline-flex;align-items:center;gap:8px;padding:6px 12px;border-radius:999px;font-weight:700;font-size:12px;letter-spacing:.06em;text-transform:uppercase;margin-bottom:16px}
+.badge-row svg{width:14px;height:14px;flex-shrink:0}
+.badge-row.good{background:rgba(34,197,94,.12);color:#0a8f3c;border:1px solid rgba(34,197,94,.22)}
+.badge-row.warn{background:rgba(255,107,107,.12);color:#d94545;border:1px solid rgba(255,107,107,.22)}
+.badge-row.neutral{background:rgba(41,98,255,.1);color:var(--blue);border:1px solid rgba(41,98,255,.22)}
 .t-card p{color:var(--navy);font-size:16.5px;line-height:1.55}
 .t-foot{display:flex;align-items:center;gap:12px;margin-top:22px;padding-top:18px;border-top:1px solid var(--gray-100)}
 .avatar{width:42px;height:42px;border-radius:50%;display:flex;align-items:center;justify-content:center;color:#fff;font-weight:700;font-size:14px;background:var(--grad-brand)}
@@ -627,7 +660,7 @@ p{line-height:1.6;color:var(--gray-700);font-size:17px;margin:0}
    FOOTER
    ========================================================== */
 footer{background:#0a1421;color:rgba(255,255,255,.7);padding:80px 0 30px}
-.footer-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr;gap:40px;margin-bottom:60px}
+.footer-grid{display:grid;grid-template-columns:1.6fr 1fr 1fr 1fr;gap:40px;margin-bottom:60px}
 @media (max-width:880px){.footer-grid{grid-template-columns:1fr 1fr;gap:36px}}
 @media (max-width:520px){.footer-grid{grid-template-columns:1fr}}
 footer h4{color:#fff;font-size:14px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;margin-bottom:18px}
@@ -672,13 +705,13 @@ footer .about{font-size:14.5px;line-height:1.65;color:rgba(255,255,255,.62);max-
     </a>
     <nav class="nav-links" aria-label="Primary">
       <a href="#services">Services</a>
+      <a href="#why">Why me</a>
       <a href="#process">Process</a>
-      <a href="#case">Results</a>
-      <a href="#pricing">Pricing</a>
+      <a href="#founding">Founding offer</a>
       <a href="#faq">FAQ</a>
     </nav>
     <div class="nav-cta">
-      <a class="btn btn-primary" href="#contact">
+      <a class="btn btn-primary" href="mailto:hryhoriizherebylo@gmail.com?subject=Free%20Meta%20Ads%20audit%20request&body=Hi%20Greg%2C%0A%0AI%27d%20like%20to%20book%20a%20free%20Meta%20Ads%20audit.%0A%0ABrand%2Fwebsite%3A%20%0AMonthly%20ad%20spend%3A%20%0AMain%20goal%20for%20the%20next%2090%20days%3A%20%0A%0AThanks%21">
         Book a call
         <svg class="arrow" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
       </a>
@@ -697,109 +730,84 @@ footer .about{font-size:14.5px;line-height:1.65;color:rgba(255,255,255,.62);max-
 
   <div class="container hero-grid">
     <div>
-      <span class="eyebrow"><span class="dot"></span>Meta Business Partner — 2026</span>
+      <span class="eyebrow"><span class="dot"></span>Now booking founding clients · 2026</span>
       <h1 style="margin-top:24px">
         <span class="word">Meta</span>
-        <span class="word">Ads</span>
-        <span class="word">that</span>
-        <span class="word gradient-text">scale</span>
-        <span class="word">past</span>
-        <span class="word">the</span>
-        <span class="word">plateau.</span>
+        <span class="word">Ads,</span>
+        <span class="word">built</span>
+        <span class="word">around</span>
+        <span class="word">your</span>
+        <span class="word gradient-text">brand.</span>
       </h1>
       <p class="lead">
-        We build the creative, funnels, and tracking that turn Facebook and Instagram ad spend
-        into predictable, measurable revenue. No vanity metrics. No fluff. Just growth.
+        A founder-led Meta Ads studio. No bloated agency, no junior account manager,
+        no smoke and mirrors. Just careful, transparent work for brands that want a real partner.
       </p>
       <div class="hero-cta">
-        <a class="btn btn-primary" href="#contact">
+        <a class="btn btn-primary" href="mailto:hryhoriizherebylo@gmail.com?subject=Free%20Meta%20Ads%20audit%20request&body=Hi%20Greg%2C%0A%0AI%27d%20like%20to%20book%20a%20free%20Meta%20Ads%20audit.%0A%0ABrand%2Fwebsite%3A%20%0AMonthly%20ad%20spend%3A%20%0AMain%20goal%20for%20the%20next%2090%20days%3A%20%0A%0AThanks%21">
           Get a free audit
           <svg class="arrow" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
         </a>
-        <a class="btn btn-ghost" href="#case">See case study</a>
+        <a class="btn btn-ghost" href="#process">See how I work</a>
       </div>
       <div class="hero-meta">
         <div class="item">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><path d="M22 4 12 14.01l-3-3"/></svg>
-          $40M+ ad spend managed
+          Free 60-minute audit
+        </div>
+        <div class="item">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+          Reply within 1 business day
         </div>
         <div class="item">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
-          120+ brands scaled
-        </div>
-        <div class="item">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
-          Avg. 3.8x ROAS
+          Direct founder access
         </div>
       </div>
     </div>
 
     <div style="position:relative">
-      <div class="dash" role="img" aria-label="Live ad performance dashboard">
+      <div class="dash" role="img" aria-label="What you get in the free audit">
         <div class="dash-header">
-          <div class="dash-title">Campaign · <span style="color:var(--gray-500);font-weight:500">Spring Q2</span> <span class="pill">LIVE</span></div>
+          <div class="dash-title">Free audit · <span style="color:var(--gray-500);font-weight:500">your account</span> <span class="pill">60 MIN</span></div>
           <div style="display:flex;gap:6px">
             <span style="width:10px;height:10px;border-radius:50%;background:#ff5f57"></span>
             <span style="width:10px;height:10px;border-radius:50%;background:#febc2e"></span>
             <span style="width:10px;height:10px;border-radius:50%;background:#28c840"></span>
           </div>
         </div>
-        <div class="dash-stats">
-          <div class="dash-stat">
-            <div class="k">ROAS</div>
-            <div class="v" data-count="4.7" data-decimals="1" data-suffix="x">0x</div>
-            <div class="delta">+38% vs last 30d</div>
-          </div>
-          <div class="dash-stat">
-            <div class="k">CPA</div>
-            <div class="v" data-count="12.40" data-decimals="2" data-prefix="$">$0.00</div>
-            <div class="delta">-22% MoM</div>
-          </div>
-          <div class="dash-stat">
-            <div class="k">CTR</div>
-            <div class="v" data-count="3.2" data-decimals="1" data-suffix="%">0%</div>
-            <div class="delta">+1.1pt</div>
-          </div>
-        </div>
-        <div class="chart" aria-hidden="true">
-          <svg viewBox="0 0 400 140" preserveAspectRatio="none">
-            <defs>
-              <linearGradient id="lg" x1="0" x2="1" y1="0" y2="0">
-                <stop offset="0%" stop-color="#2962ff"/>
-                <stop offset="100%" stop-color="#7c4dff"/>
-              </linearGradient>
-              <linearGradient id="ag" x1="0" x2="0" y1="0" y2="1">
-                <stop offset="0%" stop-color="#7c4dff" stop-opacity=".35"/>
-                <stop offset="100%" stop-color="#7c4dff" stop-opacity="0"/>
-              </linearGradient>
-            </defs>
-            <path class="area" d="M0,110 C40,100 70,90 100,80 C140,68 170,90 200,72 C240,52 270,60 300,40 C340,20 370,28 400,18 L400,140 L0,140 Z"/>
-            <path class="line" d="M0,110 C40,100 70,90 100,80 C140,68 170,90 200,72 C240,52 270,60 300,40 C340,20 370,28 400,18"/>
-          </svg>
-        </div>
+
+        <ul class="audit-list">
+          <li><span class="tick"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span><div><div class="t">Account structure review</div><div class="s">Campaigns, audiences, budget allocation</div></div></li>
+          <li><span class="tick"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span><div><div class="t">Pixel &amp; CAPI health check</div><div class="s">Server-side events, deduplication, EMQ</div></div></li>
+          <li><span class="tick"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span><div><div class="t">Creative teardown</div><div class="s">Hooks, formats, fatigue, what to test next</div></div></li>
+          <li><span class="tick"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span><div><div class="t">Funnel friction map</div><div class="s">Landing page &amp; checkout drop-offs</div></div></li>
+          <li><span class="tick"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span><div><div class="t">Written 30-day plan</div><div class="s">Three things you can fix this week</div></div></li>
+        </ul>
+
         <div class="dash-foot">
-          <div class="live"><span class="dot"></span>Pixel firing · 1,284 events / hr</div>
-          <span>Updated just now</span>
+          <div class="live"><span class="dot"></span>No pitch deck. Yours to keep.</div>
+          <span>Free</span>
         </div>
       </div>
 
       <div class="chip c1" aria-hidden="true">
         <div class="icon" style="background:#2962ff">
-          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 7 13.5 15.5 8.5 10.5 2 17"/><polyline points="16 7 22 7 22 13"/></svg>
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
         </div>
-        <div>+24 conversions<div class="meta">last 60 min</div></div>
+        <div>Working session<div class="meta">60 min on Zoom</div></div>
       </div>
       <div class="chip c2" aria-hidden="true">
         <div class="icon" style="background:#7c4dff">
-          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
         </div>
-        <div>Auto-bid optimized<div class="meta">2 min ago</div></div>
+        <div>Written report<div class="meta">delivered in 48h</div></div>
       </div>
       <div class="chip c3" aria-hidden="true">
         <div class="icon" style="background:#00b8d4">
-          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
         </div>
-        <div>New creative live<div class="meta">video_v3.mp4</div></div>
+        <div>Zero obligation<div class="meta">no pitch, no pressure</div></div>
       </div>
     </div>
   </div>
@@ -808,26 +816,28 @@ footer .about{font-size:14.5px;line-height:1.65;color:rgba(255,255,255,.62);max-
 <!-- ============================== TRUST ============================== -->
 <section class="trust" style="padding:60px 0 20px">
   <div class="container">
-    <div class="label">Trusted by ambitious brands</div>
+    <div class="label">Built on the tools that move the needle</div>
     <div class="marquee" aria-hidden="true">
       <div class="marquee-track">
-        <span>NORTHWAVE</span><span class="dotsep"></span>
-        <span>Lumen&amp;Co</span><span class="dotsep"></span>
-        <span>OAKHAUS</span><span class="dotsep"></span>
-        <span>Pulse Beauty</span><span class="dotsep"></span>
-        <span>SOLARA</span><span class="dotsep"></span>
-        <span>Velora</span><span class="dotsep"></span>
-        <span>HEIRLOOM</span><span class="dotsep"></span>
-        <span>Nimbus</span><span class="dotsep"></span>
+        <span>Meta Ads Manager</span><span class="dotsep"></span>
+        <span>Conversions API</span><span class="dotsep"></span>
+        <span>Shopify</span><span class="dotsep"></span>
+        <span>Klaviyo</span><span class="dotsep"></span>
+        <span>GA4</span><span class="dotsep"></span>
+        <span>Google Tag Manager</span><span class="dotsep"></span>
+        <span>Triple Whale</span><span class="dotsep"></span>
+        <span>Hotjar</span><span class="dotsep"></span>
+        <span>Figma</span><span class="dotsep"></span>
         <!-- duplicate for seamless loop -->
-        <span>NORTHWAVE</span><span class="dotsep"></span>
-        <span>Lumen&amp;Co</span><span class="dotsep"></span>
-        <span>OAKHAUS</span><span class="dotsep"></span>
-        <span>Pulse Beauty</span><span class="dotsep"></span>
-        <span>SOLARA</span><span class="dotsep"></span>
-        <span>Velora</span><span class="dotsep"></span>
-        <span>HEIRLOOM</span><span class="dotsep"></span>
-        <span>Nimbus</span><span class="dotsep"></span>
+        <span>Meta Ads Manager</span><span class="dotsep"></span>
+        <span>Conversions API</span><span class="dotsep"></span>
+        <span>Shopify</span><span class="dotsep"></span>
+        <span>Klaviyo</span><span class="dotsep"></span>
+        <span>GA4</span><span class="dotsep"></span>
+        <span>Google Tag Manager</span><span class="dotsep"></span>
+        <span>Triple Whale</span><span class="dotsep"></span>
+        <span>Hotjar</span><span class="dotsep"></span>
+        <span>Figma</span><span class="dotsep"></span>
       </div>
     </div>
   </div>
@@ -839,9 +849,9 @@ footer .about{font-size:14.5px;line-height:1.65;color:rgba(255,255,255,.62);max-
     <div class="section-head reveal">
       <div class="copy">
         <span class="eyebrow"><span class="dot"></span>Services</span>
-        <h2>Everything your <span class="gradient-text">Meta funnel</span> needs — under one roof.</h2>
+        <h2>Everything your <span class="gradient-text">Meta funnel</span> needs — done by one person.</h2>
       </div>
-      <p>From thumb-stopping creative to airtight tracking, we own the full performance loop so your CPA goes down and revenue goes up.</p>
+      <p>From thumb-stopping creative to airtight tracking, I own the full performance loop so nothing falls between an account manager and a "creative team" you never meet.</p>
     </div>
 
     <div class="cards reveal-stagger">
@@ -871,7 +881,7 @@ footer .about{font-size:14.5px;line-height:1.65;color:rgba(255,255,255,.62);max-
           </svg>
         </div>
         <h3>Creative studio</h3>
-        <p>UGC, motion, statics, and hooks engineered to perform. We ship 30+ ad variants a month and double down on the winners.</p>
+        <p>UGC, motion, statics, and hooks engineered to perform. A steady drip of new variants every week — double down on what works, kill what doesn't.</p>
         <span class="more">Learn more →</span>
       </article>
 
@@ -931,29 +941,53 @@ footer .about{font-size:14.5px;line-height:1.65;color:rgba(255,255,255,.62);max-
             <polygon class="bolt" points="17,2 6,18 14,18 11,30 24,12 16,12 19,2" fill="#2962ff" stroke="#7c4dff" stroke-width="1.4" stroke-linejoin="round"/>
           </svg>
         </div>
-        <h3>Scaling sprints</h3>
-        <p>Built for brands ready to push past $50k/mo spend without ROAS collapsing. CBO, lookalikes, broad — done right.</p>
+        <h3>Scaling support</h3>
+        <p>For brands ready to grow spend without ROAS collapsing. Structured testing, broad audiences, smart budget pacing — the boring fundamentals that actually work.</p>
         <span class="more">Learn more →</span>
       </article>
     </div>
   </div>
 </section>
 
-<!-- ============================== STATS ============================== -->
-<section class="stats">
+<!-- ============================== WHY ME ============================== -->
+<section class="stats" id="why">
   <div class="container">
     <div class="head reveal">
       <div>
-        <span class="eyebrow on-dark"><span class="dot"></span>By the numbers</span>
-        <h2 style="margin-top:18px">Proof, not promises.</h2>
+        <span class="eyebrow on-dark"><span class="dot"></span>Why work with me</span>
+        <h2 style="margin-top:18px">A newer agency. A sharper way of working.</h2>
       </div>
-      <p>Real outcomes from the brands we've partnered with over the last 24 months. Every metric independently verifiable on request.</p>
+      <p>You won't get a bloated retainer or a junior manager learning on your account. You get me — building, testing, and reporting with the obsessiveness of a founder who needs this to work.</p>
     </div>
-    <div class="stat-grid reveal-stagger">
-      <div class="stat"><div class="num"><span data-count="40" data-decimals="0">0</span><span class="suffix">M+</span></div><div class="lab">Ad spend managed</div></div>
-      <div class="stat"><div class="num"><span data-count="3.8" data-decimals="1">0</span><span class="suffix">x</span></div><div class="lab">Average ROAS across accounts</div></div>
-      <div class="stat"><div class="num"><span data-count="120" data-decimals="0">0</span><span class="suffix">+</span></div><div class="lab">Brands scaled to date</div></div>
-      <div class="stat"><div class="num"><span data-count="62" data-decimals="0">0</span><span class="suffix">%</span></div><div class="lab">Avg. CPA reduction in 90 days</div></div>
+    <div class="why-grid reveal-stagger">
+      <div class="why">
+        <div class="why-ic">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+        </div>
+        <h3>Founder-led</h3>
+        <p>You talk to me, not an account exec. Every campaign, every creative brief, every report — done by the person you hired.</p>
+      </div>
+      <div class="why">
+        <div class="why-ic">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+        </div>
+        <h3>1-business-day reply</h3>
+        <p>No week-long email threads. Slack channel, async video, real responses. You'll feel like I work in-house.</p>
+      </div>
+      <div class="why">
+        <div class="why-ic">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h20"/><path d="M21 3v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V3"/><path d="M7 21h10"/><path d="M12 16v5"/></svg>
+        </div>
+        <h3>Full transparency</h3>
+        <p>Your ad account stays in your name. Live dashboard. Full access. You see exactly what I see — no curated screenshots.</p>
+      </div>
+      <div class="why">
+        <div class="why-ic">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2 L15 9 L22 9 L16.5 13.5 L18 21 L12 17 L6 21 L7.5 13.5 L2 9 L9 9 Z"/></svg>
+        </div>
+        <h3>Skin in the game</h3>
+        <p>Month-to-month after a 30-day pilot. If I'm not earning my fee, you walk. No long contracts dressed up as "partnership."</p>
+      </div>
     </div>
   </div>
 </section>
@@ -994,143 +1028,92 @@ footer .about{font-size:14.5px;line-height:1.65;color:rgba(255,255,255,.62);max-
   </div>
 </section>
 
-<!-- ============================== CASE ============================== -->
-<section class="case" id="case">
+<!-- ============================== FOUNDING PARTNER OFFER ============================== -->
+<section class="case" id="founding">
   <div class="container">
     <div class="section-head reveal">
       <div class="copy">
-        <span class="eyebrow"><span class="dot"></span>Case study</span>
-        <h2>How OAKHAUS hit <span class="gradient-text">5.2x ROAS</span> in 90 days.</h2>
+        <span class="eyebrow"><span class="dot"></span>Founding partner offer</span>
+        <h2>Booking <span class="gradient-text">3 founding clients</span> right now.</h2>
       </div>
-      <p>A premium homewares brand stuck at 1.8x ROAS — until we rebuilt the creative engine, fixed attribution, and re-architected the funnel.</p>
+      <p>I'm building my client roster. In exchange for working with me at this stage, the first three brands get a serious discount, my full attention, and the kind of partnership that's hard to buy later.</p>
     </div>
 
     <article class="case-card reveal">
       <div class="case-text">
-        <span class="tag">Homewares · DTC</span>
-        <h3>"Greg Digital's team did in 8 weeks what our last agency couldn't do in a year."</h3>
-        <p>OAKHAUS came to us plateaued at $80k/mo with a CPA that wouldn't budge. We rebuilt the offer angle around a 'craftsman vs. mass-market' narrative, shipped 42 new creatives in the first 30 days, and migrated tracking to server-side CAPI to recover ~22% of conversions iOS was eating.</p>
+        <span class="tag">Limited · 3 spots only</span>
+        <h3>What you get as a founding client</h3>
+        <p>I want to build a portfolio I'm proud of. That means picking a small number of brands, doing exceptional work, and turning those wins into the case studies that grow the agency. If you're one of the three, you get the upside of that focus.</p>
         <div class="case-quote">
-          "They actually understand our brand voice — the creative isn't generic Meta ad slop. And the reporting is finally honest."
-          <span class="who">— Marcus Hale, Founder, OAKHAUS</span>
+          "If I do my job right, you'll be the case study I tell every future client about — and you'll have paid a fraction of what they will."
+          <span class="who">— Greg Zherebylo, Founder, Greg Digital</span>
         </div>
       </div>
-      <div class="case-metrics">
+      <div class="case-metrics offer-metrics">
         <div class="metric">
-          <div class="label">ROAS</div>
-          <div class="value">5.2x <span class="arrow">↑</span></div>
+          <div class="label">Founding rate</div>
+          <div class="value">−40%</div>
+          <div class="sub">vs. standard pricing</div>
         </div>
         <div class="metric">
-          <div class="label">Monthly revenue</div>
-          <div class="value">$412k <span class="arrow">↑</span></div>
+          <div class="label">Pilot length</div>
+          <div class="value">30 days</div>
+          <div class="sub">money-back if not happy</div>
         </div>
         <div class="metric">
-          <div class="label">CPA</div>
-          <div class="value">−58%</div>
+          <div class="label">Lock-in</div>
+          <div class="value">None</div>
+          <div class="sub">month-to-month after pilot</div>
         </div>
         <div class="metric">
-          <div class="label">Days to results</div>
-          <div class="value">90</div>
+          <div class="label">Spots left</div>
+          <div class="value">3 / 3</div>
+          <div class="sub">first come, first served</div>
         </div>
+        <a class="btn btn-light founding-cta" href="mailto:hryhoriizherebylo@gmail.com?subject=Founding%20client%20application&body=Hi%20Greg%2C%0A%0AI%27d%20like%20to%20apply%20for%20one%20of%20the%20founding%20client%20spots.%0A%0ABrand%2Fwebsite%3A%20%0ACurrent%20monthly%20ad%20spend%3A%20%0AMy%20biggest%20growth%20challenge%20right%20now%3A%20%0A%0AThanks%21">
+          Apply for a founding spot
+          <svg class="arrow" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+        </a>
       </div>
     </article>
   </div>
 </section>
 
-<!-- ============================== TESTIMONIALS ============================== -->
+<!-- ============================== STRAIGHT TALK ============================== -->
 <section class="testi">
   <div class="container">
     <div class="section-head reveal">
       <div class="copy">
-        <span class="eyebrow"><span class="dot"></span>Client love</span>
-        <h2>The kind of agency you wish you'd hired sooner.</h2>
+        <span class="eyebrow"><span class="dot"></span>Straight talk</span>
+        <h2>Not every brand should hire me. Here's the honest version.</h2>
       </div>
-      <p>We don't churn clients — we keep them. Average partnership length: 19 months.</p>
+      <p>Most agency sites tell you what you want to hear. I'd rather you self-select before we ever get on a call.</p>
     </div>
 
     <div class="t-grid reveal-stagger">
       <article class="t-card">
-        <div class="stars" aria-hidden="true">★★★★★</div>
-        <p>"We tripled monthly revenue without raising spend. The creative testing cadence alone was worth the retainer."</p>
-        <div class="t-foot">
-          <div class="avatar">SK</div>
-          <div><div class="name">Sara K.</div><div class="role">CMO, Velora Skincare</div></div>
+        <div class="badge-row good">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+          <span>You'll love this if</span>
         </div>
+        <p>You're a founder or marketing lead who wants a real partner, not a faceless agency. You value transparency over polish, and you'd rather have one sharp person obsessed with your account than a "team" of five that ghosts you.</p>
       </article>
 
       <article class="t-card">
-        <div class="stars" aria-hidden="true">★★★★★</div>
-        <p>"They're the first agency that didn't hide behind dashboards. Real conversations, real tradeoffs, real numbers."</p>
-        <div class="t-foot">
-          <div class="avatar" style="background:linear-gradient(135deg,#00b8d4,#2962ff)">JM</div>
-          <div><div class="name">James M.</div><div class="role">Founder, Northwave Outdoors</div></div>
+        <div class="badge-row warn">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+          <span>Skip me if</span>
         </div>
+        <p>You need a 50-page deck before every decision, want a 6-month contract, or you're spending under $3k/mo and expecting agency-level output. I'd rather refer you to a great freelancer than waste your money.</p>
       </article>
 
       <article class="t-card">
-        <div class="stars" aria-hidden="true">★★★★★</div>
-        <p>"Scaled us from $30k to $180k/month in spend with ROAS holding steady. They actually know how to scale, not just launch."</p>
-        <div class="t-foot">
-          <div class="avatar" style="background:linear-gradient(135deg,#7c4dff,#ff6b6b)">PR</div>
-          <div><div class="name">Priya R.</div><div class="role">Head of Growth, Lumen &amp; Co</div></div>
+        <div class="badge-row neutral">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+          <span>What I'm building</span>
         </div>
+        <p>I'm new — and I'm not pretending otherwise. What I bring is hunger, modern tactics, and the time to actually care about your account. The first three founding clients get my full attention and a price that reflects where I am in the journey.</p>
       </article>
-    </div>
-  </div>
-</section>
-
-<!-- ============================== PRICING ============================== -->
-<section class="pricing" id="pricing">
-  <div class="container">
-    <div class="section-head reveal">
-      <div class="copy">
-        <span class="eyebrow"><span class="dot"></span>Pricing</span>
-        <h2>Transparent retainers. No long contracts.</h2>
-      </div>
-      <p>Month-to-month after the first 90 days. If we're not earning our fee in incremental revenue, you walk.</p>
-    </div>
-
-    <div class="plans reveal-stagger">
-      <div class="plan">
-        <h3>Launch</h3>
-        <p class="desc">For brands spending under $20k/mo on Meta.</p>
-        <div class="price"><span class="amt">$2,500</span><span class="per">/ month</span></div>
-        <ul class="feat">
-          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>Up to 2 active campaigns</li>
-          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>10 ad creatives / month</li>
-          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>Pixel + CAPI setup</li>
-          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>Bi-weekly reporting calls</li>
-        </ul>
-        <a class="btn btn-ghost" href="#contact">Get started</a>
-      </div>
-
-      <div class="plan featured">
-        <span class="badge">Most popular</span>
-        <h3>Scale</h3>
-        <p class="desc">For brands spending $20k–$100k/mo.</p>
-        <div class="price"><span class="amt">$5,500</span><span class="per">/ month</span></div>
-        <ul class="feat">
-          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>Unlimited campaigns</li>
-          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>30+ creatives / month (statics, motion, UGC)</li>
-          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>Landing page design + build</li>
-          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>Dedicated Slack channel</li>
-          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>Weekly strategy calls</li>
-        </ul>
-        <a class="btn btn-light" href="#contact">Book a call</a>
-      </div>
-
-      <div class="plan">
-        <h3>Enterprise</h3>
-        <p class="desc">$100k+/mo spend or multi-brand portfolios.</p>
-        <div class="price"><span class="amt">Custom</span></div>
-        <ul class="feat">
-          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>Everything in Scale</li>
-          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>Embedded performance lead</li>
-          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>MMM + incrementality testing</li>
-          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>Quarterly scaling sprints</li>
-        </ul>
-        <a class="btn btn-ghost" href="#contact">Talk to sales</a>
-      </div>
     </div>
   </div>
 </section>
@@ -1147,24 +1130,28 @@ footer .about{font-size:14.5px;line-height:1.65;color:rgba(255,255,255,.62);max-
 
     <div class="faq-list reveal">
       <div class="q">
-        <button class="q-btn" aria-expanded="false">How quickly will I see results?<span class="ic">+</span></button>
-        <div class="q-body"><p>Most accounts see meaningful improvement within the first 30 days — typically a CPA drop of 15–30% from quick wins like creative refresh and tracking fixes. The compounding scale-up tends to land in months 2–3 once we have enough data to make confident bidding decisions.</p></div>
+        <button class="q-btn" aria-expanded="false">Why should I work with a new agency?<span class="ic">+</span></button>
+        <div class="q-body"><p>Honest answer: because you'll get attention you can't buy at an established shop. I have a small number of slots and I'm playing for long-term reputation, not next quarter's billings. The trade-off is that I don't have a deck of past case studies to wave at you yet — that's exactly why founding rates exist.</p></div>
       </div>
       <div class="q">
-        <button class="q-btn" aria-expanded="false">Do you only work on Meta?<span class="ic">+</span></button>
-        <div class="q-body"><p>Meta is our specialty and accounts for 90% of our work. We'll happily collaborate with your existing Google or TikTok partner, and for some clients we run paid social end-to-end. We won't pretend to be experts at things we're not.</p></div>
+        <button class="q-btn" aria-expanded="false">What's your background?<span class="ic">+</span></button>
+        <div class="q-body"><p>I've been studying performance marketing seriously for the past few years — Meta's official Blueprint program, a long list of operator newsletters, and a lot of self-funded testing on small accounts. I'm now opening up the studio to take on paying clients. If you want a deeper walkthrough of my approach before we talk, just ask.</p></div>
+      </div>
+      <div class="q">
+        <button class="q-btn" aria-expanded="false">How quickly will I see results?<span class="ic">+</span></button>
+        <div class="q-body"><p>The cleanest wins — fixing tracking, killing wasted spend, refreshing fatigued creative — typically land in the first 30 days. Real scaling decisions need 60–90 days of clean data. I'd rather set realistic expectations now than hype-cycle you into a contract.</p></div>
       </div>
       <div class="q">
         <button class="q-btn" aria-expanded="false">Is there a minimum contract?<span class="ic">+</span></button>
-        <div class="q-body"><p>The first 90 days are committed — we need that runway to do this properly. After that, you're month-to-month with 30 days notice. We've never lost a client at the 90-day mark, but the option is always yours.</p></div>
+        <div class="q-body"><p>No. After the 30-day pilot, you're month-to-month. Cancel anytime. The pilot itself comes with a money-back clause if I haven't delivered what I promised.</p></div>
       </div>
       <div class="q">
-        <button class="q-btn" aria-expanded="false">Who owns the assets and accounts?<span class="ic">+</span></button>
-        <div class="q-body"><p>You do. Always. Ad accounts, pixels, creative files, landing pages — all in your name, on your infrastructure. If we ever part ways, you keep everything we built.</p></div>
+        <button class="q-btn" aria-expanded="false">Who owns the ad account and creative?<span class="ic">+</span></button>
+        <div class="q-body"><p>You do. Always. Ad account, pixel, creative files, landing pages — all in your name, on your infrastructure. If we part ways, you keep every asset I built.</p></div>
       </div>
       <div class="q">
-        <button class="q-btn" aria-expanded="false">What does the audit include?<span class="ic">+</span></button>
-        <div class="q-body"><p>A 60-minute working session plus a written diagnostic covering account structure, creative library, pixel health, attribution gaps, funnel friction, and a prioritized list of fixes. Free, even if you don't hire us.</p></div>
+        <button class="q-btn" aria-expanded="false">What does the free audit include?<span class="ic">+</span></button>
+        <div class="q-body"><p>A 60-minute working session plus a written diagnostic covering account structure, creative library, pixel health, attribution gaps, funnel friction, and three prioritized fixes you can ship this week. Free, yours to keep, no obligation.</p></div>
       </div>
     </div>
   </div>
@@ -1179,7 +1166,7 @@ footer .about{font-size:14.5px;line-height:1.65;color:rgba(255,255,255,.62);max-
         <h2 style="margin-top:18px">Let's see what your account is leaving on the table.</h2>
         <p>60-minute working session. No pitch deck. You'll walk away with a written diagnostic and three things you can fix this week — whether or not you hire us.</p>
         <div class="cta-actions">
-          <a class="btn btn-light" href="#">
+          <a class="btn btn-light" href="mailto:hryhoriizherebylo@gmail.com?subject=Free%20Meta%20Ads%20audit%20request&body=Hi%20Greg%2C%0A%0AI%27d%20like%20to%20book%20a%20free%20Meta%20Ads%20audit.%0A%0ABrand%2Fwebsite%3A%20%0AMonthly%20ad%20spend%3A%20%0AMain%20goal%20for%20the%20next%2090%20days%3A%20%0A%0AThanks%21">
             Book a free audit
             <svg class="arrow" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
           </a>
@@ -1196,8 +1183,8 @@ footer .about{font-size:14.5px;line-height:1.65;color:rgba(255,255,255,.62);max-
           <div><div class="t">Reply within 1 business day</div><div class="s">A real human, not a sequencer bot</div></div>
         </div>
         <div class="row">
-          <div class="ico"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2 L2 7 l10 5 10-5z"/><path d="M2 17 l10 5 10-5"/><path d="M2 12 l10 5 10-5"/></svg></div>
-          <div><div class="t">Meta Business Partner</div><div class="s">Direct rep access for partner accounts</div></div>
+          <div class="ico"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></div>
+          <div><div class="t">Yours to keep</div><div class="s">Diagnostic stays with you, even if we don't work together</div></div>
         </div>
       </div>
     </div>
@@ -1214,13 +1201,7 @@ footer .about{font-size:14.5px;line-height:1.65;color:rgba(255,255,255,.62);max-
         <a href="#top" aria-label="Greg Digital home" style="display:inline-block">
           <img src="logo-light.png" alt="Greg Digital" style="height:88px;width:auto;border-radius:10px;display:block;margin-bottom:18px" />
         </a>
-        <p class="about">A performance-led Meta Ads agency turning ad spend into predictable, measurable revenue for ambitious DTC and service brands.</p>
-        <div class="socials">
-          <a href="#" aria-label="Instagram"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg></a>
-          <a href="#" aria-label="Facebook"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></a>
-          <a href="#" aria-label="LinkedIn"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg></a>
-          <a href="#" aria-label="X"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18.244 2H21l-6.52 7.45L22 22h-6.83l-4.78-6.27L4.8 22H2l6.97-7.96L2 2h6.91l4.32 5.71L18.244 2zm-1.2 18h1.92L7.05 4H5.05l11.99 16z"/></svg></a>
-        </div>
+        <p class="about">A founder-led Meta Ads studio. Honest work, transparent pricing, and direct access — built for brands that want a real partner.</p>
       </div>
       <div>
         <h4>Services</h4>
@@ -1233,28 +1214,26 @@ footer .about{font-size:14.5px;line-height:1.65;color:rgba(255,255,255,.62);max-
         </ul>
       </div>
       <div>
-        <h4>Company</h4>
+        <h4>Studio</h4>
         <ul>
-          <li><a href="#case">Case studies</a></li>
+          <li><a href="#why">Why me</a></li>
           <li><a href="#process">Process</a></li>
-          <li><a href="#pricing">Pricing</a></li>
+          <li><a href="#founding">Founding offer</a></li>
           <li><a href="#faq">FAQ</a></li>
-          <li><a href="#contact">Contact</a></li>
         </ul>
       </div>
       <div>
-        <h4>Contact</h4>
+        <h4>Get in touch</h4>
         <ul>
           <li><a href="mailto:hryhoriizherebylo@gmail.com">hryhoriizherebylo@gmail.com</a></li>
-          <li><a href="#">Book a call</a></li>
-          <li><a href="#">Partner program</a></li>
-          <li><a href="#">Careers</a></li>
+          <li><a href="mailto:hryhoriizherebylo@gmail.com?subject=Free%20Meta%20Ads%20audit%20request&body=Hi%20Greg%2C%0A%0AI%27d%20like%20to%20book%20a%20free%20Meta%20Ads%20audit.%0A%0ABrand%2Fwebsite%3A%20%0AMonthly%20ad%20spend%3A%20%0AMain%20goal%20for%20the%20next%2090%20days%3A%20%0A%0AThanks%21">Book a free audit</a></li>
+          <li><a href="mailto:hryhoriizherebylo@gmail.com?subject=Founding%20client%20application">Apply as founding client</a></li>
         </ul>
       </div>
     </div>
     <div class="legal">
       <div>© 2026 Greg Digital. All rights reserved.</div>
-      <div style="display:flex;gap:18px"><a href="#">Privacy</a><a href="#">Terms</a><a href="#">Cookies</a></div>
+      <div>Built with care in Melbourne, Australia.</div>
     </div>
   </div>
 </footer>
@@ -1341,7 +1320,7 @@ window.addEventListener('mousemove', (e)=>{
 }, {passive:true});
 
 /* ===== Smooth-scroll active nav highlight (lightweight) ===== */
-const sections = ['services','process','case','pricing','faq'].map(id=>document.getElementById(id)).filter(Boolean);
+const sections = ['services','why','process','founding','faq'].map(id=>document.getElementById(id)).filter(Boolean);
 const navLinks = document.querySelectorAll('.nav-links a');
 const sio = new IntersectionObserver((entries)=>{
   entries.forEach(e=>{
